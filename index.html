@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modern Landing Page</title>
+
+    <!-- Clear Css  -->
+    <link href="css/clear.css" rel="stylesheet" />
+
+    <!-- Tailwind Css  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Custom Css  -->
+    <link href="css/style.css" rel="stylesheet" />
+
+    <!-- fontawesome Icon  -->
+    <link
+      href="https://kit-pro.fontawesome.com/releases/v5.15.4/css/pro.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!-- Slick slider Css  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"
+    />
+    <style>
+      :root {
+        /* Colors */
+        --primary: #dc6e17; /* Blue 600 */
+        --secondary: #00000040; /* Indigo 600 */
+
+        /* Fonts */
+        --font-main: "Manrope", sans-serif;
+      }
+    </style>
+    <!-- Tailwind Config -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              brand: {
+                primary: "var(--primary)",
+                secondary: "var(--secondary)",
+              },
+            },
+            fontFamily: {
+              body: "var(--font-main)",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="text-body">
+    <!-- Navbar Start -->
+    <nav
+      class="fixed top-0 left-0 w-full z-50 bg-black/80 backdrop-blur-md border-t-4 border-brand-primary"
+    >
+      <div
+        class="max-w-[1400px] mx-auto px-6 py-4 flex items-center justify-between"
+      >
+        <!-- Logo -->
+        <div class="text-white font-extrabold text-lg tracking-wide">
+          CORPORATE<span class="text-brand-primary">EVENTS</span>
+        </div>
+
+        <!-- Desktop Menu (≥1024px) -->
+        <ul
+          class="hidden lg:flex items-center space-x-3 xl:space-x-8 text-sm font-medium px-4"
+        >
+          <li>
+            <a
+              href="#home"
+              class="text-white hover:text-brand-primary transition"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="#about"
+              class="text-white hover:text-brand-primary transition"
+              >About Us</a
+            >
+          </li>
+          <li>
+            <a
+              href="#weddings"
+              class="text-white hover:text-brand-primary transition"
+              >Weddings</a
+            >
+          </li>
+          <li>
+            <a
+              href="#corporate"
+              class="text-brand-primary transition font-semibold"
+            >
+              Corporate Events
+            </a>
+          </li>
+          <li>
+            <a
+              href="#events"
+              class="text-white hover:text-brand-primary transition"
+              >All Events</a
+            >
+          </li>
+          <li>
+            <a
+              href="#contact"
+              class="text-white hover:text-brand-primary transition"
+              >Contact Us</a
+            >
+          </li>
+        </ul>
+
+        <!-- CTA Button (≥1024px) -->
+        <div class="hidden lg:block">
+          <a
+            href="#book"
+            class="bg-brand-primary text-black px-5 py-2 rounded-md text-sm font-semibold hover:opacity-90 transition"
+          >
+            Book a Strategy Call
+          </a>
+        </div>
+
+        <!-- Mobile Menu Button (<1024px) -->
+        <button
+          id="menuBtn"
+          class="lg:hidden text-white text-2xl focus:outline-none"
+          aria-label="Toggle menu"
+        >
+          ☰
+        </button>
+      </div>
+
+      <!-- Mobile Menu (<1024px) -->
+      <div
+        id="mobileMenu"
+        class="hidden lg:hidden bg-black border-t border-white/10 px-6 py-6 space-y-4"
+      >
+        <a
+          href="#home"
+          class="block text-white text-base font-medium hover:text-brand-primary transition"
+          >Home</a
+        >
+        <a
+          href="#about"
+          class="block text-white text-base font-medium hover:text-brand-primary transition"
+          >About Us</a
+        >
+        <a
+          href="#weddings"
+          class="block text-white text-base font-medium hover:text-brand-primary transition"
+          >Weddings</a
+        >
+        <a
+          href="#corporate"
+          class="block text-brand-primary text-base font-semibold transition"
+          >Corporate Events</a
+        >
+        <a
+          href="#events"
+          class="block text-white text-base font-medium hover:text-brand-primary transition"
+          >All Events</a
+        >
+        <a
+          href="#contact"
+          class="block text-white text-base font-medium hover:text-brand-primary transition"
+          >Contact Us</a
+        >
+
+        <a
+          href="#book"
+          class="block bg-brand-primary text-black text-center py-2 rounded-md font-semibold mt-4"
+        >
+          Book a Strategy Call
+        </a>
+      </div>
+    </nav>
+    <!-- Navbar End -->
+
+
+    <!-- Hero Section -->
+<section
+  class="relative min-h-screen flex items-center bg-cover bg-center"
+  style="background-image: url('https://images.unsplash.com/photo-1515169067865-5387ec356754?q=80&w=1920');"
+>
+  <!-- Overlay -->
+  <div class="absolute inset-0 bg-black/70"></div>
+
+  <div
+    class="relative z-10 max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center"
+  >
+    <!-- Left Content -->
+    <div>
+      <h1 class="text-white text-4xl md:text-5xl font-bold leading-tight mb-6">
+        Corporate Events That Drive Results
+      </h1>
+
+      <p class="text-gray-300 text-lg max-w-xl mb-8">
+        Lorem Ipsum Dolor Sit Amet Consectetur. Vulputate Ultrices.
+      </p>
+
+      <div class="flex flex-wrap gap-4">
+        <a
+          href="#form"
+          class="bg-[#DC6E17] text-black px-6 py-3 rounded-md font-medium hover:opacity-90 transition"
+        >
+          Get A Custom Event Proposal
+        </a>
+
+        <a
+          href="#contact"
+          class="bg-white/10 text-white px-6 py-3 rounded-md font-medium border border-white/20 hover:bg-white/20 transition"
+        >
+          Schedule A Free Strategy Call
+        </a>
+      </div>
+    </div>
+
+    <!-- Right Form -->
+    <div
+      id="form"
+      class="bg-black/60 backdrop-blur-md border border-white/20 rounded-xl p-8 max-w-md w-full mx-auto"
+    >
+      <h2 class="text-white text-xl font-semibold mb-6 text-center">
+        Send Your Requirement
+      </h2>
+
+      <!-- FORM SUBMIT -->
+      <form
+        action="https://formsubmit.co/jitender@digicots.com"
+        method="POST"
+        class="space-y-4"
+      >
+        <!-- Disable Captcha -->
+        <input type="hidden" name="_captcha" value="false" />
+
+        <!-- Email Subject -->
+        <input
+          type="hidden"
+          name="_subject"
+          value="New Corporate Event Requirement"
+        />
+
+        <!-- Success Redirect (optional) -->
+        <input
+          type="hidden"
+          name="_next"
+          value="https://yourdomain.com/thank-you.html"
+        />
+
+        <input
+          type="text"
+          name="Company Name"
+          placeholder="Company Name"
+          required
+          class="w-full bg-transparent border border-white/30 rounded-md px-4 py-2 text-white placeholder-gray-400 focus:outline-none focus:border-[#DC6E17]"
+        />
+
+        <input
+          type="text"
+          name="Name"
+          placeholder="Your Name"
+          required
+          class="w-full bg-transparent border border-white/30 rounded-md px-4 py-2 text-white placeholder-gray-400 focus:outline-none focus:border-[#DC6E17]"
+        />
+
+        <input
+          type="email"
+          name="Email"
+          placeholder="Official Email (Only)*"
+          required
+          class="w-full bg-transparent border border-white/30 rounded-md px-4 py-2 text-white placeholder-gray-400 focus:outline-none focus:border-[#DC6E17]"
+        />
+
+        <input
+          type="tel"
+          name="Mobile Number"
+          placeholder="Mobile Number*"
+          required
+          class="w-full bg-transparent border border-white/30 rounded-md px-4 py-2 text-white placeholder-gray-400 focus:outline-none focus:border-[#DC6E17]"
+        />
+
+        <textarea
+          name="Event Details"
+          rows="4"
+          required
+          placeholder="Please Share Complete Details
+• Event Date
+• Requirement Details
+• Preferences
+• Budget"
+          class="w-full bg-transparent border border-white/30 rounded-md px-4 py-2 text-white placeholder-gray-400 focus:outline-none focus:border-[#DC6E17] resize-none"
+        ></textarea>
+
+        <button
+          type="submit"
+          class="w-full bg-gray-700 hover:bg-gray-600 transition text-white py-2 rounded-md font-medium"
+        >
+          Send
+        </button>
+      </form>
+    </div>
+  </div>
+</section>
+
+    <script>
+      const menuBtn = document.getElementById("menuBtn");
+      const mobileMenu = document.getElementById("mobileMenu");
+
+      menuBtn.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+    </script>
+  </body>
+</html>

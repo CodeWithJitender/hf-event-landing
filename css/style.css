@@ -1,0 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+
+
+body{
+    font-family: var(--font-main) !important;
+}
+.nav-link {
+  @apply text-white hover:text-brand-primary transition;
+}
+
+.mobile-link {
+  @apply block text-white text-base font-medium hover:text-brand-primary transition;
+}
+
