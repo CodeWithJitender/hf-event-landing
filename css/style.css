@@ -16,10 +16,10 @@ nav img {
 transition: .5s;
 }
 nav.active .inner-nav{
-  padding: 14px;
+  padding: 20px;
 }
 nav.active img {
-  max-width: 80px !important;
+  max-width: 101px !important;
 }
 #form{
   border: 1px solid #FFFFFF33;
