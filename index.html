@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Modern Landing Page</title>
+    <title>Modern Landing</title>
 
     <!-- Clear Css  -->
     <link href="css/clear.css" rel="stylesheet" />
@@ -67,67 +67,91 @@
       class="fixed top-0 left-0 w-full z-50 bg-black/80 backdrop-blur-md border-t-4 border-brand-primary"
     >
       <div
-        class="max-w-[1400px] mx-auto px-6 py-4 flex items-center justify-between"
+        class="max-w-full mx-auto px-6 py-4 flex items-center justify-between inner-nav"
       >
         <!-- Logo -->
         <div class="text-white font-extrabold text-lg tracking-wide">
-          CORPORATE<span class="text-brand-primary">EVENTS</span>
+          <img src="images/logo.png" class="max-w-40" alt="" />
         </div>
 
         <!-- Desktop Menu (≥1024px) -->
         <ul
-          class="hidden lg:flex items-center space-x-3 xl:space-x-8 text-sm font-medium px-4"
+          class="hidden xl:flex items-center space-x-3 xl:space-x-8 text-sm font-medium px-4"
         >
           <li>
             <a
-              href="#home"
-              class="text-white hover:text-brand-primary transition"
-              >Home</a
-            >
-          </li>
-          <li>
-            <a
-              href="#about"
-              class="text-white hover:text-brand-primary transition"
-              >About Us</a
-            >
-          </li>
-          <li>
-            <a
-              href="#weddings"
-              class="text-white hover:text-brand-primary transition"
-              >Weddings</a
-            >
-          </li>
-          <li>
-            <a
               href="#corporate"
-              class="text-brand-primary transition font-semibold"
+              class="text-white hover:text-brand-primary transition"
             >
               Corporate Events
             </a>
           </li>
           <li>
             <a
-              href="#events"
+              href="#about"
               class="text-white hover:text-brand-primary transition"
-              >All Events</a
             >
+              About Us
+            </a>
           </li>
           <li>
             <a
-              href="#contact"
+              href="#capabilities"
               class="text-white hover:text-brand-primary transition"
-              >Contact Us</a
             >
+              Capabilities
+            </a>
+          </li>
+          <li>
+            <a
+              href="#business-impact"
+              class="text-white hover:text-brand-primary transition"
+            >
+              Business Impact
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="#testimonials"
+              class="text-white hover:text-brand-primary transition"
+            >
+              Testimonials
+            </a>
+          </li>
+          <li>
+            <a
+              href="#why-choose-us"
+              class="text-white hover:text-brand-primary transition"
+            >
+              Why Choose Us
+            </a>
+          </li>
+          <li>
+            <a
+              href="#process"
+              class="text-white hover:text-brand-primary transition"
+            >
+              Our Process
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="#experiences"
+              class="text-white hover:text-brand-primary transition"
+            >
+              Experiences
+            </a>
           </li>
         </ul>
 
         <!-- CTA Button (≥1024px) -->
-        <div class="hidden lg:block">
+        <div class="hidden xl:block">
           <a
-            href="#book"
-            class="bg-brand-primary text-black px-5 py-2 rounded-md text-sm font-semibold hover:opacity-90 transition"
+            href="tel:+919211733883"
+            target="_blank"
+            class="bg-brand-primary text-white px-5 py-2 rounded-md text-sm font-semibold hover:opacity-90 transition"
           >
             Book a Strategy Call
           </a>
@@ -136,7 +160,7 @@
         <!-- Mobile Menu Button (<1024px) -->
         <button
           id="menuBtn"
-          class="lg:hidden text-white text-2xl focus:outline-none"
+          class="xl:hidden text-white text-2xl focus:outline-none"
           aria-label="Toggle menu"
         >
           ☰
@@ -146,42 +170,68 @@
       <!-- Mobile Menu (<1024px) -->
       <div
         id="mobileMenu"
-        class="hidden lg:hidden bg-black border-t border-white/10 px-6 py-6 space-y-4"
+        class="hidden xl:hidden bg-black border-t border-white/10 px-6 py-6 space-y-4"
       >
         <a
-          href="#home"
-          class="block text-white text-base font-medium hover:text-brand-primary transition"
-          >Home</a
-        >
-        <a
-          href="#about"
-          class="block text-white text-base font-medium hover:text-brand-primary transition"
-          >About Us</a
-        >
-        <a
-          href="#weddings"
-          class="block text-white text-base font-medium hover:text-brand-primary transition"
-          >Weddings</a
-        >
-        <a
           href="#corporate"
-          class="block text-brand-primary text-base font-semibold transition"
-          >Corporate Events</a
+          class="mobile-link block text-white text-base font-medium hover:text-brand-primary transition"
         >
-        <a
-          href="#events"
-          class="block text-white text-base font-medium hover:text-brand-primary transition"
-          >All Events</a
-        >
-        <a
-          href="#contact"
-          class="block text-white text-base font-medium hover:text-brand-primary transition"
-          >Contact Us</a
-        >
+          Corporate Events
+        </a>
 
         <a
+          href="#about"
+          class="mobile-link block text-white text-base font-medium hover:text-brand-primary transition"
+        >
+          About Us
+        </a>
+
+        <a
+          href="#capabilities"
+          class="mobile-link block text-white text-base font-medium hover:text-brand-primary transition"
+        >
+          Capabilities
+        </a>
+
+        <a
+          href="#business-impact"
+          class="mobile-link block text-white text-base font-medium hover:text-brand-primary transition"
+        >
+          Business Impact
+        </a>
+
+        <a
+          href="#testimonials"
+          class="mobile-link block text-white text-base font-medium hover:text-brand-primary transition"
+        >
+          Testimonials
+        </a>
+
+        <a
+          href="#why-choose-us"
+          class="mobile-link block text-white text-base font-medium hover:text-brand-primary transition"
+        >
+          Why Choose Us
+        </a>
+
+        <a
+          href="#process"
+          class="mobile-link block text-white text-base font-medium hover:text-brand-primary transition"
+        >
+          Our Process
+        </a>
+
+        <a
+          href="#experiences"
+          class="mobile-link block text-white text-base font-medium hover:text-brand-primary transition"
+        >
+          Experiences
+        </a>
+
+        <!-- CTA -->
+        <a
           href="#book"
-          class="block bg-brand-primary text-black text-center py-2 rounded-md font-semibold mt-4"
+          class="mobile-link block bg-brand-primary text-black text-center py-2 rounded-md font-semibold mt-6"
         >
           Book a Strategy Call
         </a>
@@ -191,8 +241,11 @@
 
     <!-- Hero Section -->
     <section
-      class="relative flex items-center bg-cover bg-center pt-[100px] md:pt-[200px] pb-[50px] px-[20px]"
-      style="background-image: url('https://codewithjitender.github.io/hf-event-landing/images/hero.jpg')"
+      class="relative flex items-center bg-cover bg-center pt-[100px] md:pt-[150px] pb-[100px] px-[20px]"
+      style="
+        background-image: url('https://codewithjitender.github.io/hf-event-landing/images/hero.jpg');
+      "
+      id="corporate"
     >
       <!-- Overlay -->
       <div class="absolute inset-0 bg-black/70"></div>
@@ -214,14 +267,14 @@
 
           <div class="flex flex-wrap gap-4">
             <a
-              href="#form"
+              href="https://hfevents.com/contact-us/"
               class="bg-[#DC6E17] text-black px-6 py-3 rounded-md font-medium hover:opacity-90 transition"
             >
               Get A Custom Event Proposal
             </a>
 
             <a
-              href="#contact"
+              href="tel:+919211733883"
               class="bg-white/10 text-white px-6 py-3 rounded-md font-medium border border-white/20 hover:bg-white/20 transition"
             >
               Schedule A Free Strategy Call
@@ -233,7 +286,7 @@
         <div class="">
           <div
             id="form"
-            class="bg-black/60 backdrop-blur-md border border-white/20 rounded-xl p-8 md:max-w-md w-full ms-auto"
+            class="bg-black/60 rounded-xl p-8 md:max-w-md w-full ms-auto"
           >
             <h2 class="text-white text-xl font-semibold mb-6 text-center">
               Send Your Requirement
@@ -319,7 +372,7 @@
     </section>
 
     <!-- Why Corporate Events Fail Section -->
-    <section class="bg-white py-16 lg:py-24 px-[20px]">
+    <section class="bg-white py-16 lg:py-24 px-[20px]" id="about">
       <div class="max-w-[1400px] mx-auto px-6">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <!-- Left Content -->
@@ -450,7 +503,7 @@
     </section>
 
     <!-- Capabilities Section -->
-    <section class="bg-white py-16 lg:py-24 px-[20px]">
+    <section class="bg-white py-16 lg:py-24 px-[20px]" id="capabilities">
       <div class="max-w-7xl mx-auto px-6">
         <!-- Heading -->
         <h2 class="text-3xl md:text-4xl font-bold text-center text-black mb-12">
@@ -566,7 +619,7 @@
     </section>
 
     <!-- Business Impact Section -->
-    <section class="bg-[#E0701A] py-16 lg:py-24 px-[20px]">
+    <section class="bg-[#E0701A] py-16 lg:py-24 px-[20px]" id="business-impact">
       <div class="max-w-[1400px] mx-auto px-6">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-end">
           <!-- Left Content -->
@@ -645,7 +698,7 @@
     </section>
 
     <!-- Testimonials Section -->
-    <section class="bg-white py-16 lg:py-24 px-[20px]">
+    <section class="bg-white py-16 lg:py-24 px-[20px]" id="testimonials">
       <div class="max-w-[1400px] mx-auto px-6 relative">
         <!-- Heading -->
         <h2 class="text-3xl md:text-4xl font-bold text-center text-black mb-12">
@@ -868,7 +921,7 @@
     </section>
 
     <!-- Production Power Section -->
-    <section class="bg-white py-16 lg:py-24 px-[20px]">
+    <section class="bg-white py-16 lg:py-24 px-[20px]" id="why-choose-us">
       <div class="max-w-7xl mx-auto">
         <!-- Heading -->
         <h2 class="text-3xl md:text-4xl font-bold text-black mb-10">
@@ -877,7 +930,7 @@
         </h2>
 
         <!-- Content Grid -->
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-10 items-start">
           <!-- Left Image -->
           <div class="rounded-2xl overflow-hidden h-full">
             <img
@@ -891,13 +944,15 @@
           <div class="space-y-6">
             <!-- Card 1 -->
             <div
-              class="border border-gray-200 bg-[#00000014] rounded-xl p-6 flex gap-6 items-start flex-col md:flex-row"
+              class="border border-gray-200 bg-[#00000014] rounded-xl p-6 flex gap-2 lg:gap-6 lg:items-center flex-col lg:flex-row"
             >
-              <div class="text-[#DC6E17] text-5xl font-bold">001</div>
-              <div>
+              <div class="text-[#DC6E17] font-bold md:w-60">
+                <div class="text-5xl">01</div>
                 <h4 class="font-semibold text-black mb-1">
                   Years Of Excellence
                 </h4>
+              </div>
+              <div class="w-full">
                 <p class="text-gray-600 text-sm">
                   Full-service catering company providing services to your
                   event.
@@ -907,11 +962,13 @@
 
             <!-- Card 2 -->
             <div
-              class="border border-gray-200 bg-[#00000014] rounded-xl p-6 flex gap-6 items-start flex-col md:flex-row"
+              class="border border-gray-200 bg-[#00000014] rounded-xl p-6 flex gap-2 lg:gap-6 lg:items-center flex-col lg:flex-row"
             >
-              <div class="text-[#DC6E17] text-5xl font-bold">100+</div>
-              <div>
+              <div class="text-[#DC6E17] font-bold md:w-60">
+                <div class="text-5xl">100+</div>
                 <h4 class="font-semibold text-black mb-1">Dream Events</h4>
+              </div>
+              <div class="w-full">
                 <p class="text-gray-600 text-sm">
                   To present each menu in a fresh, imaginative way.
                 </p>
@@ -920,11 +977,13 @@
 
             <!-- Card 3 -->
             <div
-              class="border border-gray-200 bg-[#00000014] rounded-xl p-6 flex gap-6 items-start flex-col md:flex-row"
+              class="border border-gray-200 bg-[#00000014] rounded-xl p-6 flex gap-2 lg:gap-6 lg:items-center flex-col lg:flex-row"
             >
-              <div class="text-[#DC6E17] text-5xl font-bold">500+</div>
-              <div>
+              <div class="text-[#DC6E17] font-bold md:w-60">
+                <div class="text-5xl">500+</div>
                 <h4 class="font-semibold text-black mb-1">Events Curated</h4>
+              </div>
+              <div class="w-full">
                 <p class="text-gray-600 text-sm">
                   To create great food tailored to each client’s particular
                   taste.
@@ -934,13 +993,15 @@
 
             <!-- Card 4 -->
             <div
-              class="border border-gray-200 bg-[#00000014] rounded-xl p-6 flex gap-6 items-start flex-col md:flex-row"
+              class="border border-gray-200 bg-[#00000014] rounded-xl p-6 flex gap-2 lg:gap-6 flex-col lg:flex-row lg:items-center"
             >
-              <div class="text-[#DC6E17] text-5xl font-bold">1.7K+</div>
-              <div>
+              <div class="text-[#DC6E17] font-bold md:w-60">
+                <div class="text-5xl">1.7K+</div>
                 <h4 class="font-semibold text-black mb-1">
                   Seats Styled To Perfection
                 </h4>
+              </div>
+              <div class="w-full">
                 <p class="text-gray-600 text-sm">
                   To create great food tailored to each client’s particular
                   taste.
@@ -953,7 +1014,7 @@
     </section>
 
     <!-- Our Proven Process -->
-    <section class="bg-white py-16 lg:py-24 px-[20px]">
+    <section class="bg-white py-16 lg:py-24 px-[20px]" id="process">
       <div class="max-w-7xl mx-auto">
         <!-- Heading -->
         <h2 class="text-3xl md:text-4xl font-bold text-center text-black mb-12">
@@ -964,7 +1025,7 @@
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
           <!-- Step 01 -->
           <div
-            class="border border-gray-200 rounded-xl p-8 text-center bg-[#00000014]"
+            class="border border-gray-200 rounded-xl p-8 text-center bg-[#00000014]" 
           >
             <div class="text-[#DC6E17] text-5xl font-bold mb-4">01</div>
             <h4 class="font-semibold text-black mb-2">
@@ -1015,7 +1076,7 @@
     </section>
 
     <!-- Signature Corporate Experiences -->
-    <section class="bg-white py-16 lg:py-24">
+    <section class="bg-white py-16 lg:py-24" id="experiences">
       <div class="max-w-7xl mx-auto px-6 relative">
         <!-- Heading -->
         <h2 class="text-3xl md:text-4xl font-bold text-center text-black mb-12">
@@ -1203,28 +1264,49 @@
         </div>
 
         <!-- Footer Menu -->
-        <ul class="flex flex-wrap justify-center gap-6">
-          <li>
-            <a href="#home" class="hover:text-white transition">Home</a>
-          </li>
-          <li>
-            <a href="#about" class="hover:text-white transition">About Us</a>
-          </li>
-          <li>
-            <a href="#weddings" class="hover:text-white transition">Weddings</a>
-          </li>
+        <ul class="flex flex-wrap justify-center gap-x-8 gap-y-3">
           <li>
             <a href="#corporate" class="hover:text-white transition">
               Corporate Events
             </a>
           </li>
           <li>
-            <a href="#events" class="hover:text-white transition">All Events</a>
+            <a href="#about" class="hover:text-white transition"> About Us </a>
           </li>
           <li>
-            <a href="#contact" class="hover:text-white transition"
-              >Contact Us</a
-            >
+            <a href="#capabilities" class="hover:text-white transition">
+              Capabilities
+            </a>
+          </li>
+          <li>
+            <a href="#business-impact" class="hover:text-white transition">
+              Business Impact
+            </a>
+          </li>
+          <li>
+            <a href="#why-choose-us" class="hover:text-white transition">
+              Why Choose Us
+            </a>
+          </li>
+          <li>
+            <a href="#process" class="hover:text-white transition">
+              Our Process
+            </a>
+          </li>
+          <li>
+            <a href="#experiences" class="hover:text-white transition">
+              Experiences
+            </a>
+          </li>
+          <li>
+            <a href="#testimonials" class="hover:text-white transition">
+              Testimonials
+            </a>
+          </li>
+          <li>
+            <a href="#contact" class="hover:text-white transition">
+              Contact Us
+            </a>
           </li>
         </ul>
 
@@ -1251,13 +1333,36 @@
 
     <!-- Slick Js  -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+      AOS.init({
+        duration: 900,
+        easing: "ease-out-cubic",
+        once: true, // animation happens only once
+        offset: 120, // trigger point
+      });
+    </script>
 
     <script>
       const menuBtn = document.getElementById("menuBtn");
       const mobileMenu = document.getElementById("mobileMenu");
-
+      const mobileLinks = document.querySelectorAll(".mobile-link");
       menuBtn.addEventListener("click", () => {
         mobileMenu.classList.toggle("hidden");
+      });
+      // Close menu on link click
+      mobileLinks.forEach((link) => {
+        link.addEventListener("click", () => {
+          mobileMenu.classList.toggle("hidden");
+        });
+      });
+      $(window).scroll(function () {
+        if ($(this).scrollTop() > 50) {
+          $("nav").addClass("active");
+        } else {
+          $("nav").removeClass("active");
+        }
       });
     </script>
     <script>

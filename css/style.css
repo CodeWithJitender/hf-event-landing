@@ -11,4 +11,16 @@ body{
 .mobile-link {
   @apply block text-white text-base font-medium hover:text-brand-primary transition;
 }
-
+nav .inner-nav,
+nav img {
+transition: .5s;
+}
+nav.active .inner-nav{
+  padding: 14px;
+}
+nav.active img {
+  max-width: 80px !important;
+}
+#form{
+  border: 1px solid #FFFFFF33;
+}
