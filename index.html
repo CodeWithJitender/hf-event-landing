@@ -3,7 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Modern Landing</title>
+    <meta
+      name="title"
+      content="HF Events - Corporate Event Planning Services "
+    />
+    <meta
+      name="description"
+      content="HF Events provides professional corporate event planning services for conferences, meetings, product launches, and corporate parties, delivering seamless and impactful business events."
+    />
+    <meta
+      name="keywords"
+      content="Corporate Event Planning Services, Corporate Event Management, Business Event Planner"
+    />
+    <meta name="robots" content="index, follow" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="language" content="English" />
+    <title>HF Events - Corporate Event Planning Services</title>
 
     <!-- Clear Css  -->
     <link href="css/clear.css" rel="stylesheet" />
@@ -67,16 +82,22 @@
       class="fixed top-0 left-0 w-full z-50 bg-black/80 backdrop-blur-md border-t-4 border-brand-primary"
     >
       <div
-        class="max-w-full mx-auto px-6 py-4 flex items-center justify-between inner-nav"
+        class="max-w-full mx-auto px-3 md:px-6 py-4 flex items-center justify-between inner-nav"
       >
         <!-- Logo -->
         <div class="text-white font-extrabold text-lg tracking-wide">
-          <img src="https://codewithjitender.github.io/hf-event-landing/images/logo.png" class="max-w-40" alt="" />
+          <a href="http://hfevents.com/" target="_blank">
+            <img
+              src="https://codewithjitender.github.io/hf-event-landing/images/logo.png"
+              class="max-w-40"
+              alt=""
+            />
+          </a>
         </div>
 
         <!-- Desktop Menu (≥1024px) -->
-        <ul
-          class="hidden xl:flex items-center space-x-3 xl:space-x-8 text-sm font-medium px-4"
+        <!-- <ul
+          class="hidden xl:flex items-center space-x-5 2xl:space-x-8 text-sm font-medium px-4"
         >
           <li>
             <a
@@ -144,23 +165,23 @@
               Experiences
             </a>
           </li>
-        </ul>
+        </ul> -->
 
         <!-- CTA Button (≥1024px) -->
-        <div class="hidden xl:block">
+        <div class="block">
           <a
             href="tel:+919211733883"
             target="_blank"
-            class="bg-brand-primary text-white px-5 py-2 rounded-md text-sm font-semibold hover:opacity-90 transition"
+            class="bg-brand-primary text-white px-3 md:px-5 py-2 rounded-md text-sm font-semibold hover:opacity-90 transition"
           >
-            Book a Strategy Call
+            +91 921 173 3883
           </a>
         </div>
 
         <!-- Mobile Menu Button (<1024px) -->
         <button
           id="menuBtn"
-          class="xl:hidden text-white text-2xl focus:outline-none"
+          class="hidden text-white text-2xl focus:outline-none"
           aria-label="Toggle menu"
         >
           ☰
@@ -241,7 +262,7 @@
 
     <!-- Hero Section -->
     <section
-      class="relative flex items-center bg-cover bg-center pt-[100px] md:pt-[150px] pb-[100px] px-[20px]"
+      class="relative items-center bg-cover bg-center pt-[100px] md:pt-[150px] pb-[100px] px-[20px] hidden"
       style="
         background-image: url('https://codewithjitender.github.io/hf-event-landing/images/hero.jpg');
       "
@@ -396,6 +417,108 @@
         </div>
       </div>
     </section>
+    <section
+      class="relative flex items-center min-h-[600px] md:min-h-screen pt-[150px] pb-[100px] px-[20px] overflow-hidden"
+      id="corporate"
+    >
+      <video
+        autoplay
+        muted
+        loop
+        playsinline
+        class="absolute inset-0 w-full h-full object-cover z-0"
+      >
+        <source src="./images/hero-video.mp4" type="video/mp4" />
+        <img
+          src="https://codewithjitender.github.io/hf-event-landing/images/hero.jpg"
+          alt="fallback"
+        />
+      </video>
+
+      <div class="absolute inset-0 bg-black/60 z-1"></div>
+
+      <div
+        class="relative z-10 max-w-[1400px] mx-auto grid grid-cols-1 md:grid-cols-2 md:gap-12 items-center w-full"
+      >
+        <div>
+          <h1
+            class="text-white text-3xl md:text-5xl font-bold leading-tight mb-6"
+          >
+            Corporate Events That <br class="hidden md:block" />
+            Drive Business Results
+          </h1>
+          <p class="text-gray-200 text-lg max-w-xl mb-8">
+            Subtly designed experiences that stay with you long after the moment
+            ends, leaving behind emotion, meaning and memory.
+          </p>
+        </div>
+
+        <div data-aos="fade-left" data-aos-delay="200">
+          <div
+            id="form"
+            class="bg-white rounded-xl p-8 md:max-w-md w-full ms-auto shadow-2xl"
+          >
+            <h2 class="text-gray-900 text-xl font-bold mb-6 text-center">
+              Send Your Requirement
+            </h2>
+
+            <form
+              id="eventForm"
+              action="https://formsubmit.co/contact@hfevents.com"
+              method="POST"
+              class="space-y-4"
+            >
+              <input
+                type="text"
+                name="Company Name"
+                placeholder="Company Name"
+                required
+                class="w-full bg-gray-50 border border-gray-300 rounded-md px-4 py-2 text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-[#DC6E17] focus:border-transparent"
+              />
+
+              <input
+                type="text"
+                name="Name"
+                placeholder="Your Name"
+                required
+                class="w-full bg-gray-50 border border-gray-300 rounded-md px-4 py-2 text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-[#DC6E17] focus:border-transparent"
+              />
+
+              <input
+                type="email"
+                name="Email"
+                placeholder="Official Email (Only)*"
+                required
+                class="w-full bg-gray-50 border border-gray-300 rounded-md px-4 py-2 text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-[#DC6E17] focus:border-transparent"
+              />
+
+              <input
+                type="tel"
+                name="Mobile Number"
+                placeholder="Mobile Number*"
+                required
+                class="w-full bg-gray-50 border border-gray-300 rounded-md px-4 py-2 text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-[#DC6E17] focus:border-transparent"
+              />
+
+              <textarea
+                name="Event Details"
+                rows="4"
+                required
+                placeholder="Please Share Complete Details..."
+                class="w-full bg-gray-50 border border-gray-300 rounded-md px-4 py-2 text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-[#DC6E17] focus:border-transparent resize-none"
+              ></textarea>
+
+              <button
+                type="submit"
+                class="w-full bg-[#DC6E17] hover:bg-[#b55a12] transition-colors text-white py-3 rounded-md font-bold uppercase tracking-wider"
+              >
+                Send
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- Why Corporate Events Fail Section -->
     <section class="bg-white py-10 lg:py-16 px-[20px]" id="about">
@@ -452,12 +575,12 @@
             </ul>
 
             <a
-              href="#framework"
+              href="tel:+919211733883"
               class="inline-block bg-[#DC6E17] text-white px-6 py-3 rounded-md font-medium hover:opacity-90 transition"
               data-aos="fade-up"
               data-aos-delay="300"
             >
-              See Our Corporate Event Framework
+              Book A Strategy Call
             </a>
           </div>
 
@@ -668,7 +791,7 @@
         <!-- CTA -->
         <div class="text-center mt-12">
           <a
-            href="#capabilities"
+            href="mailto:contact@hfevents.com"
             class="inline-block bg-[#DC6E17] text-white px-6 py-3 rounded-md font-medium hover:opacity-90 transition"
             data-aos="fade-up"
             data-aos-delay="900"
@@ -709,12 +832,12 @@
             </ul>
 
             <a
-              href="#case-study"
+              href="tel:+919211733883"
               class="inline-block bg-white text-[#E0701A] px-10 py-3 rounded-lg font-semibold hover:opacity-90 transition"
               data-aos="fade-up"
               data-aos-delay="450"
             >
-              Case Study
+              Book A Strategy Call
             </a>
           </div>
 
@@ -726,9 +849,10 @@
               data-aos="zoom-in"
             >
               <h3 class="text-4xl font-bold mb-2">+32%</h3>
-              <h4 class="font-semibold mb-2">Business Goals</h4>
+              <h4 class="font-semibold mb-2">Employee Engagement</h4>
               <p class="text-sm opacity-90">
-                Lorem ipsum dolor sit amet consectetur.
+                Post-event increase in engagement scores (pre vs. 30–60 day
+                survey).
               </p>
             </div>
 
@@ -738,9 +862,10 @@
               data-aos-delay="150"
             >
               <h3 class="text-4xl font-bold mb-2">+27%</h3>
-              <h4 class="font-semibold mb-2">Business Goals</h4>
+              <h4 class="font-semibold mb-2">Qualified Leads Captured</h4>
               <p class="text-sm opacity-90">
-                Lorem ipsum dolor sit amet consectetur.
+                More CRM-qualified leads from event touchpoints and booth
+                interactions.
               </p>
             </div>
 
@@ -750,9 +875,10 @@
               data-aos-delay="300"
             >
               <h3 class="text-4xl font-bold mb-2">+24%</h3>
-              <h4 class="font-semibold mb-2">Business Goals</h4>
+              <h4 class="font-semibold mb-2">Media & Social Reach</h4>
               <p class="text-sm opacity-90">
-                Lorem ipsum dolor sit amet consectetur.
+                Lift in earned media mentions and social impressions in the
+                first 30 days.
               </p>
             </div>
 
@@ -762,9 +888,10 @@
               data-aos-delay="450"
             >
               <h3 class="text-4xl font-bold mb-2">2.5x</h3>
-              <h4 class="font-semibold mb-2">Business Goals</h4>
+              <h4 class="font-semibold mb-2">Sales Pipeline Multiplier</h4>
               <p class="text-sm opacity-90">
-                Lorem ipsum dolor sit amet consectetur.
+                Average increase in pipeline value attributable to event-sourced
+                leads.
               </p>
             </div>
           </div>
@@ -800,7 +927,7 @@
               <div class="flex items-center justify-between">
                 <div class="flex items-center gap-3">
                   <img
-                    src="https://i.pravatar.cc/100?img=12"
+                    src="https://codewithjitender.github.io/hf-event-landing/images/profile-1.jpg"
                     class="w-12 h-12 rounded-full object-cover"
                     alt="Client"
                   />
@@ -808,7 +935,7 @@
                     <p class="font-semibold text-black">
                       Head of Marketing, Global Tech Firm
                     </p>
-                    <p class="text-sm text-gray-500">Mark</p>
+                    <p class="text-sm text-gray-500">Arjun Mehta</p>
                   </div>
                 </div>
 
@@ -831,7 +958,7 @@
               <div class="flex items-center justify-between">
                 <div class="flex items-center gap-3">
                   <img
-                    src="https://i.pravatar.cc/100?img=32"
+                    src="https://codewithjitender.github.io/hf-event-landing/images/profile-2.jpg"
                     class="w-12 h-12 rounded-full object-cover"
                     alt="Client"
                   />
@@ -839,7 +966,7 @@
                     <p class="font-semibold text-black">
                       HR Director, Financial Services Co.
                     </p>
-                    <p class="text-sm text-gray-500">Lisa</p>
+                    <p class="text-sm text-gray-500">Priya Sharma</p>
                   </div>
                 </div>
 
@@ -862,7 +989,7 @@
               <div class="flex items-center justify-between">
                 <div class="flex items-center gap-3">
                   <img
-                    src="https://i.pravatar.cc/100?img=47"
+                    src="https://codewithjitender.github.io/hf-event-landing/images/profile-3.jpg"
                     class="w-12 h-12 rounded-full object-cover"
                     alt="Client"
                   />
@@ -870,7 +997,7 @@
                     <p class="font-semibold text-black">
                       Sales Director, B2B Consultancy
                     </p>
-                    <p class="text-sm text-gray-500">Marge</p>
+                    <p class="text-sm text-gray-500">Vikram Singh</p>
                   </div>
                 </div>
 
@@ -879,97 +1006,7 @@
             </div>
           </div>
           <!-- Slide -->
-          <div class="px-3">
-            <div
-              class="border border-gray-200 rounded-xl p-6 h-full bg-[#00000014]"
-            >
-              <p class="text-gray-600 mb-6 leading-relaxed">
-                “From concept to execution, everything was seamless. The team
-                understood our business goals and delivered an event that drove
-                real engagement and measurable results.”
-              </p>
-
-              <div class="flex items-center justify-between">
-                <div class="flex items-center gap-3">
-                  <img
-                    src="https://i.pravatar.cc/100?img=12"
-                    class="w-12 h-12 rounded-full object-cover"
-                    alt="Client"
-                  />
-                  <div>
-                    <p class="font-semibold text-black">
-                      Head of Marketing, Global Tech Firm
-                    </p>
-                    <p class="text-sm text-gray-500">Mark</p>
-                  </div>
-                </div>
-
-                <div class="flex text-yellow-400">★★★★★</div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Slide -->
-          <div class="px-3">
-            <div
-              class="border border-gray-200 rounded-xl p-6 h-full bg-[#00000014]"
-            >
-              <p class="text-gray-600 mb-6 leading-relaxed">
-                “This was more than event planning—it was a strategic
-                partnership. Our leadership summit was flawlessly organised and
-                aligned perfectly with our company objectives.”
-              </p>
-
-              <div class="flex items-center justify-between">
-                <div class="flex items-center gap-3">
-                  <img
-                    src="https://i.pravatar.cc/100?img=32"
-                    class="w-12 h-12 rounded-full object-cover"
-                    alt="Client"
-                  />
-                  <div>
-                    <p class="font-semibold text-black">
-                      HR Director, Financial Services Co.
-                    </p>
-                    <p class="text-sm text-gray-500">Lisa</p>
-                  </div>
-                </div>
-
-                <div class="flex text-yellow-400">★★★★★</div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Slide -->
-          <div class="px-3">
-            <div
-              class="border border-gray-200 rounded-xl p-6 h-full bg-[#00000014]"
-            >
-              <p class="text-gray-600 mb-6 leading-relaxed">
-                “Every detail was intentional. The event elevated our brand,
-                impressed our clients, and generated high-quality leads. We’ve
-                already booked our next event.”
-              </p>
-
-              <div class="flex items-center justify-between">
-                <div class="flex items-center gap-3">
-                  <img
-                    src="https://i.pravatar.cc/100?img=47"
-                    class="w-12 h-12 rounded-full object-cover"
-                    alt="Client"
-                  />
-                  <div>
-                    <p class="font-semibold text-black">
-                      Sales Director, B2B Consultancy
-                    </p>
-                    <p class="text-sm text-gray-500">Marge</p>
-                  </div>
-                </div>
-
-                <div class="flex text-yellow-400">★★★★★</div>
-              </div>
-            </div>
-          </div>
+         
 
           <!-- Add more slides if needed -->
         </div>
@@ -992,14 +1029,14 @@
         </button>
 
         <!-- CTA -->
-        <div class="text-center mt-12" data-aos="fade-up" data-aos-delay="400">
+        <!-- <div class="text-center mt-12" data-aos="fade-up" data-aos-delay="400">
           <a
             href="#stories"
             class="inline-block bg-[#DC6E17] text-white px-8 py-3 rounded-md font-medium hover:opacity-90 transition"
           >
             View More Client Stories
           </a>
-        </div>
+        </div> -->
       </div>
     </section>
 
@@ -1010,7 +1047,6 @@
         <h2
           class="text-3xl md:text-4xl font-bold text-black mb-10"
           data-aos="fade-up"
-          data-aos-delay="100"
         >
           Where Production Power<br class="hidden sm:block" />
           Meets Creative Soul
@@ -1019,11 +1055,7 @@
         <!-- Content Grid -->
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-10 items-start">
           <!-- Left Image -->
-          <div
-            class="rounded-2xl overflow-hidden h-full"
-            data-aos="fade-right"
-            data-aos-delay="200"
-          >
+          <div class="rounded-2xl overflow-hidden h-full" data-aos="fade-right">
             <img
               src="https://codewithjitender.github.io/hf-event-landing/images/where-section.jpg"
               alt="Event Presentation"
@@ -1039,7 +1071,7 @@
               data-aos="fade-up"
             >
               <div class="text-[#DC6E17] font-bold md:w-60">
-                <div class="text-5xl">01</div>
+                <div class="text-5xl">08+</div>
                 <h4 class="font-semibold text-black mb-1">
                   Years Of Excellence
                 </h4>
@@ -1056,7 +1088,7 @@
             <div
               class="border border-gray-200 bg-[#00000014] rounded-xl p-6 flex gap-2 lg:gap-6 lg:items-center flex-col lg:flex-row"
               data-aos="fade-up"
-              data-aos-delay="150"
+              data-aos-delay="100"
             >
               <div class="text-[#DC6E17] font-bold md:w-60">
                 <div class="text-5xl">100+</div>
@@ -1073,7 +1105,7 @@
             <div
               class="border border-gray-200 bg-[#00000014] rounded-xl p-6 flex gap-2 lg:gap-6 lg:items-center flex-col lg:flex-row"
               data-aos="fade-up"
-              data-aos-delay="300"
+              data-aos-delay="200"
             >
               <div class="text-[#DC6E17] font-bold md:w-60">
                 <div class="text-5xl">500+</div>
@@ -1091,7 +1123,7 @@
             <div
               class="border border-gray-200 bg-[#00000014] rounded-xl p-6 flex gap-2 lg:gap-6 flex-col lg:flex-row lg:items-center"
               data-aos="fade-up"
-              data-aos-delay="450"
+              data-aos-delay="300"
             >
               <div class="text-[#DC6E17] font-bold md:w-60">
                 <div class="text-5xl">1.7K+</div>
@@ -1134,10 +1166,13 @@
             <h4 class="font-semibold text-black mb-2">
               Strategy & Vision Workshop
             </h4>
-            <p class="text-gray-600 text-sm leading-relaxed">
-              Lorem ipsum dolor sit amet consectetur. Non adipiscing et sed non
-              augue nunc.
-            </p>
+            <div class="text-gray-600 text-sm leading-relaxed">
+              <p class="mb-2 italic">We figure out what actually matters.</p>
+              A fast, focused session with your stakeholders to lock the
+              objective, audience, wow-moments and success metrics. You walk
+              away with a crisp one-page brief, clear KPIs and a plan that won’t
+              change every Tuesday.
+            </div>
           </div>
 
           <!-- Step 02 -->
@@ -1148,34 +1183,40 @@
           >
             <div class="text-[#DC6E17] text-5xl font-bold mb-4">02</div>
             <h4 class="font-semibold text-black mb-2">Plan & Produce</h4>
-            <p class="text-gray-600 text-sm leading-relaxed">
-              Lorem ipsum dolor sit amet consectetur. Elementum dui nulla varius
-              purus at at tincidunt. Faucibus diam id ut nisl enim sed et
-              tempor.
-            </p>
+            <div class="text-gray-600 text-sm leading-relaxed">
+              <p class="mb-2 italic">We dream big. Then we build it.</p>
+
+              Creative concepting, stage and set design, AV & lighting, vendor
+              sourcing and a minute-by-minute production plan; all aligned to
+              your budget and deadline. We sweat the small stuff so the show
+              looks effortless.
+            </div>
           </div>
 
           <!-- Step 03 -->
           <div
             class="border border-gray-200 rounded-xl p-8 text-center bg-[#00000014]"
-                    data-aos="fade-up"
+            data-aos="fade-up"
             data-aos-delay="200"
           >
             <div class="text-[#DC6E17] text-5xl font-bold mb-4">03</div>
             <h4 class="font-semibold text-black mb-2">Deliver & Debrief</h4>
-            <p class="text-gray-600 text-sm leading-relaxed">
-              Lorem ipsum dolor sit amet consectetur. Non adipiscing et sed non
-              augue nunc.
-            </p>
+            <div class="text-gray-600 text-sm leading-relaxed">
+              <p class="mb-2 italic">
+                We put on the show. Then prove it worked.
+              </p>
+
+              Flawless on-ground execution, live support and safety, followed by
+              clear post-event analytics: engagement, leads, media reach and
+              learnings. Applause is great; measurable impact is better.
+            </div>
           </div>
         </div>
 
         <!-- CTA -->
-        <div class="text-center"
-         data-aos="fade-up"
-      data-aos-delay="300">
+        <div class="text-center" data-aos="fade-up" data-aos-delay="300">
           <a
-            href="#strategy-call"
+            href="tel:+919211733883"
             class="inline-block bg-[#DC6E17] text-white px-8 py-3 rounded-md font-medium hover:opacity-90 transition"
           >
             Start With A Strategy Call
@@ -1188,13 +1229,15 @@
     <section class="bg-white py-10 lg:py-16" id="experiences">
       <div class="max-w-7xl mx-auto px-6 relative">
         <!-- Heading -->
-        <h2 class="text-3xl md:text-4xl font-bold text-center text-black mb-12" data-aos="fade-up">
+        <h2
+          class="text-3xl md:text-4xl font-bold text-center text-black mb-12"
+          data-aos="fade-up"
+        >
           Our Signature Corporate Experiences
         </h2>
 
         <!-- Slider -->
-        <div class="experience-slider" data-aos="fade-up"
-        data-aos-delay="200">
+        <div class="experience-slider" data-aos="fade-up" data-aos-delay="200">
           <!-- Slide -->
           <div class="px-3">
             <div class="rounded-xl overflow-hidden">
@@ -1305,7 +1348,7 @@
         <button
           class="experience-prev absolute left-0 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full border border-[#DC6E17] text-[#DC6E17] flex items-center justify-center hover:bg-[#DC6E17] hover:text-white transition"
           data-aos="fade-left"
-        data-aos-delay="300"
+          data-aos-delay="300"
         >
           ‹
         </button>
@@ -1313,25 +1356,25 @@
         <button
           class="experience-next absolute right-0 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full border border-[#DC6E17] text-[#DC6E17] flex items-center justify-center hover:bg-[#DC6E17] hover:text-white transition"
           data-aos="fade-right"
-        data-aos-delay="300"
+          data-aos-delay="300"
         >
           ›
         </button>
 
         <!-- CTA -->
-        <div class="text-center mt-12">
+        <!-- <div class="text-center mt-12">
           <a
             href="#reel"
             class="inline-block bg-[#DC6E17] text-white px-8 py-3 rounded-md font-medium hover:opacity-90 transition"
           >
             Watch Event Highlight Reel
           </a>
-        </div>
+        </div> -->
       </div>
     </section>
 
     <!-- Final CTA Section -->
-    <section class="relative bg-black py-20 lg:py-28">
+    <section class="relative bg-black pt-14 pb-5 md:py-20 lg:py-28">
       <!-- Gradient Overlay -->
       <div
         class="absolute inset-0 bg-gradient-to-b from-black/60 via-black/80 to-black"
@@ -1350,14 +1393,17 @@
 
         <div class="flex flex-col sm:flex-row justify-center gap-4">
           <a
-            href="#consultation"
+            href="#corporate"
             class="bg-[#DC6E17] text-black px-6 py-3 rounded-md font-semibold hover:opacity-90 transition"
           >
             Book a Free Consultation
           </a>
 
           <a
-            href="#quote"
+            href="tel:+919211733883   
+            
+            
+            "
             class="bg-white/10 border border-white/20 px-6 py-3 rounded-md font-semibold hover:bg-white/20 transition"
           >
             Get a Custom Quote
@@ -1373,11 +1419,15 @@
       >
         <!-- Logo -->
         <div class="flex items-center gap-2 text-white font-bold">
-          <img src="https://codewithjitender.github.io/hf-event-landing/images/logo.png" class="max-w-[100px]" alt="">
+          <img
+            src="https://codewithjitender.github.io/hf-event-landing/images/logo.png"
+            class="max-w-[100px]"
+            alt=""
+          />
         </div>
 
         <!-- Footer Menu -->
-        <ul class="flex flex-wrap justify-center gap-x-8 gap-y-3">
+        <ul class="flex flex-wrap justify-center gap-x-4 lg:gap-x-8 gap-y-3">
           <li>
             <a href="#corporate" class="hover:text-white transition">
               Corporate Events
@@ -1420,19 +1470,30 @@
 
         <!-- Social Icons -->
         <div class="flex gap-4 text-lg">
-          <a href="#" class="hover:text-white transition">
+          <a
+            href="https://www.facebook.com/people/HF-Events/61583806867660/"
+            target="_blank"
+            class="hover:text-white transition"
+          >
             <i class="fab fa-facebook-f"></i>
           </a>
-          <a href="#" class="hover:text-white transition">
+          <a
+            href="https://www.instagram.com/headfieldevents/"
+            target="_blank"
+            class="hover:text-white transition"
+          >
             <i class="fab fa-instagram"></i>
-          </a>
-          <a href="#" class="hover:text-white transition">
-            <i class="fab fa-linkedin-in"></i>
           </a>
         </div>
       </div>
     </footer>
-
+    <a
+      href="https://wa.me/9211733883"
+      target="_blank"
+      class="fixed bottom-6 left-6 bg-[#25D366] text-white w-14 h-14 rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-transform z-50"
+    >
+      <i class="fab fa-whatsapp text-3xl"></i>
+    </a>
     <!-- ========== jquery Js ========== -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
